@@ -13,7 +13,7 @@ from sklearn import metrics
 def accuracy(true_values, predictions):
     return np.mean(true_values == predictions)
 
-df = pd.read_csv('titanic.csv')
+df = pd.read_csv('../titanic_data.csv')
 df = df[["pclass","sex","age","survived"]]
 df.dropna(inplace=True)
 
